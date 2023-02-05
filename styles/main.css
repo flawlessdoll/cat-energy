@@ -1,7 +1,7 @@
 .header-container {
   position: fixed;
   width: 100vw;
-  z-index:10;
+  z-index: 10;
 }
 
 header {
@@ -14,10 +14,13 @@ header {
 
 }
 
+
+
 .nav-menu {
   display: flex;
   gap: 35px;
 }
+
 .nav-link {
   font-size: 20px;
   color: white;
@@ -43,8 +46,54 @@ header {
 .logo {
   width: min-content;
 }
+
 .hero-bg {
-  position:absolute;
+  position: absolute;
   height: 100vh;
   right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+section {
+  width: 100%;
+  padding: 80px 0;
+
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.section-container {
+  max-width: 1220px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100%;
+  align-items: center;
+}
+
+.hero-section .section-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.section-container img {
+  width: min-content;
+  height: min-content;
+}
+
+.hero-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero-body p {
+  font-size: 20px;
 }
