@@ -3,6 +3,7 @@
 :root {
   --green: #68b738;
   --green-2: #5eaa2f;
+  --grey: #f2f2f2;
 }
 
 * {
@@ -62,4 +63,53 @@ button:hover {
 button:active {
   background-color: var(--green-2);
   color: #ffffff33;
+}
+
+.header-container {
+  position: absolute;
+  width: 100vw;
+  z-index: 10;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1220px;
+  margin: auto;
+  margin-top: 50px;
+
+}
+
+
+
+.nav-menu {
+  display: flex;
+  gap: 35px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  transition: opacity 100ms ease;
+  user-select: none;
+}
+
+.nav-link:hover {
+  opacity: .6;
+}
+
+.nav-link:active {
+  opacity: .3;
+}
+
+.nav-link.active {
+  padding-bottom: 5px;
+  border-bottom: 2px white solid;
+  pointer-events: none;
+}
+
+.logo {
+  width: min-content;
 }
