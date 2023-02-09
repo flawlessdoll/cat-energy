@@ -8,14 +8,12 @@
 
 section {
   width: 100%;
-
 }
 
 .hero-section {
   display: flex;
   align-items: center;
   height: 100vh;
-  box-sizing: border-box;
 }
 
 .section-container {
@@ -24,7 +22,6 @@ section {
   flex-direction: column;
   margin: auto;
   height: 100%;
-  align-items: center;
   padding: 80px 110px;
 }
 
@@ -32,6 +29,7 @@ section {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 
 .section-container img {
@@ -45,14 +43,9 @@ section {
   gap: 40px;
 }
 
-.hero-body p {
-  font-size: 20px;
+.hero-body h4 {
+  font-weight: 400;
 }
-
-
-
-
-
 
 .categories-section {
   display: flex;
@@ -77,6 +70,7 @@ section {
 .categories-section>.section-container {
   flex-direction: row;
   gap: 80px;
+  padding-bottom: 0;
 }
 
 .category {
@@ -87,13 +81,101 @@ section {
   padding: 40px;
 }
 
-.category > p {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-}
-
-.category > a {
+.category>a {
   display: flex;
   gap: 28px;
   align-items: center;
+}
+
+.work-item-icon {
+  background: var(--green);
+  width: 80px;
+  aspect-ratio: 1 / 1;
+  display: grid;
+  place-content: center;
+}
+
+.work-section .section-container {
+  gap: 32px;
+}
+
+.work-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.work-item {
+  width: 100%;
+  padding: 42px 0;
+  position: relative;
+}
+
+.work-item>p {
+  margin-top: 32px;
+}
+
+.work-item-number {
+  font-size: 15rem;
+  position: absolute;
+  z-index: -1;
+  color: #eee;
+  top: 50%;
+  right: 0;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.specs-container {
+  display: flex;
+  gap: 42px;
+}
+
+.live-example .section-container {
+  width: 100%;
+  max-width: none;
+}
+
+.live-example__body {
+  background-color: #f2f2f2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.live-example__description {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.specs-item {
+  padding: 20px 50px;
+  border: 1px #b9b9b9 solid;
+  border-radius: 3px;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.specs-item__label {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  background-color: #F2F2F2;
+  padding: 0 5px;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.live-example__image {
+  position: relative;
+}
+
+.live-example__image--before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scale(1.5);
 }
